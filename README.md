@@ -24,6 +24,3 @@
  <a href="https://www.youtube.com/channel/UCFFA-hvAq3NSLzlzzO3ehwg"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
  <a href="https://www.instagram.com/x2osso/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
 </div>
-
-##
-![Snake animation](https://github.com/x2osso/x2osso/blob/output/github-contribution-grid-snake.svg)
