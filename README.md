@@ -1,26 +1,55 @@
-### Aopa bão ? 👋 me chamo Gabriel das Chagas Ribeiro
 
-##
-### No momento: 
-- 👽 Em busca de conhecimento ...
-- 🐱‍🏍 Me aprofundando em PHP ...
-- 🤔 Sei o basico de HTML,CSS,Java,JavaScript,c#,dart,php ...
-- 🎮 De vez em quando eu mexo com uns jogos e meio q um hobbie ...
-- 🐍 Futuramente quero aprender Python ou dominar o mundo com as IA oque vir primeiro... 
-##
+<h1 align="center">Aopa bão? 👋 Sou Gabriel - x2osso</h1>
+<p align="center">
+  Desenvolvedor em evolução, streamer e apaixonado por tecnologia.<br>
+  Explorando o mundo da programação, IA e automação.<br>
+  <b>Seja bem-vindo(a) ao meu espaço!</b>
+</p>
 
-<div style="display: inline_block"><br>
-   <img align="center" height="30" widht="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
-   <img align="center" height="30" widht="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-   <img align="center" height="30" widht="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-   <img align="center" height="30" widht="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />        
-   <img align="center" height="30" widht="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" />           
-</div>
+---
 
-##
+## 🚀 Sobre mim
+- 🧠 Em constante busca de conhecimento.
+- 🔥 Me aprofundando em **PHP** e backend.
+- 💻 Conhecimentos em **HTML, CSS, JavaScript, C#, Dart, Java**.
+- 🎮 De vez em quando briso em jogos e desenvolvimento de hobbys.
+- 🤖 Curioso sobre **IA** e futuramente **Python**.
 
-<div>
- <a href="https://twitch.tv/x2osso"><img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white"></a>
- <a href="https://www.youtube.com/channel/UCFFA-hvAq3NSLzlzzO3ehwg"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
- <a href="https://www.instagram.com/x2osso/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-</div>
+---
+
+## 💻 Tecnologias que uso
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40px"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40px"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40px"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40px"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40px"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="40px"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="40px"/>
+</p>
+
+---
+
+## 🌐 Me encontre por aí
+<p align="center">
+  <a href="https://x2osso.com.br" target="_blank">
+    <img src="https://img.shields.io/badge/Website-111111?style=for-the-badge&logo=google-chrome&logoColor=white"/>
+  </a>
+  <a href="https://www.twitch.tv/x2osso" target="_blank">
+    <img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white"/>
+  </a>
+  <a href="https://www.youtube.com/@x2osso" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+  </a>
+  <a href="https://www.instagram.com/x2osso/" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+  </a>
+</p>
+
+---
+
+## 🔥 Estatísticas do GitHub
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=x2osso&show_icons=true&theme=tokyonight&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=x2osso&layout=compact&theme=tokyonight"/>
+</p>
