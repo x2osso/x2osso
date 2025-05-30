@@ -32,7 +32,7 @@
 
 ## 🌐 Me encontre por aí
 <p align="center">
-  <a href="https://x2osso.com.br" target="_blank">
+  <a href="http://x2osso.com.br" target="_blank">
     <img src="https://img.shields.io/badge/Website-111111?style=for-the-badge&logo=google-chrome&logoColor=white"/>
   </a>
   <a href="https://www.twitch.tv/x2osso" target="_blank">
