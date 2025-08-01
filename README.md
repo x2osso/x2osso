@@ -1,7 +1,7 @@
 
 <h1 align="center">Aopa bão? 👋 Sou Gabriel - x2osso</h1>
-<img style="text-align:center" src="https://github.githubassets.com/assets/mona-loading-default-c3c7aad1282f.gif" width="50px" height="60px">
 <p align="center">
+  <img src="https://github.githubassets.com/assets/mona-loading-default-c3c7aad1282f.gif" width="50px" height="60px">
   Desenvolvedor em evolução, streamer e apaixonado por tecnologia.<br>
   Explorando o mundo da programação, IA e automação.<br>
   <b>Seja bem-vindo(a) ao meu espaço!</b>
