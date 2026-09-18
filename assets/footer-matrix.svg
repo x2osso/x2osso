@@ -1,244 +1,118 @@
-
-<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="170" viewBox="0 0 1200 170" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#040608">
-        <animate attributeName="stop-color" values="#040608;#0A0D11;#040608" dur="8s" repeatCount="indefinite"/>
+    <linearGradient id="footerBg" x1="0" y1="0" x2="1200" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#05070A">
+        <animate attributeName="stop-color" values="#05070A;#090C10;#05070A" dur="8s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="45%" stop-color="#11161C">
-        <animate attributeName="stop-color" values="#11161C;#171C22;#11161C" dur="9s" repeatCount="indefinite"/>
+      <stop offset="50%" stop-color="#171C22">
+        <animate attributeName="stop-color" values="#171C22;#1E252D;#171C22" dur="9s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" stop-color="#313842">
-        <animate attributeName="stop-color" values="#313842;#3B444F;#313842" dur="10s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#38414B">
+        <animate attributeName="stop-color" values="#38414B;#45505C;#38414B" dur="10s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
-    <linearGradient id="titleGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F5F7FA"/>
-      <stop offset="100%" stop-color="#D0D7DE"/>
-    </linearGradient>
-
-    <linearGradient id="subGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#D0D7DE"/>
-      <stop offset="100%" stop-color="#8B949E"/>
-    </linearGradient>
-
-    <filter id="titleGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <pattern id="scanlines" width="6" height="6" patternUnits="userSpaceOnUse">
+    <pattern id="footerScan" width="6" height="6" patternUnits="userSpaceOnUse">
       <rect width="6" height="1" fill="#FFFFFF" fill-opacity="0.03"/>
     </pattern>
   </defs>
 
-  <!-- base -->
-  <rect width="1200" height="300" fill="url(#bg)"/>
-
-  <!-- pulse overlay -->
-  <rect width="1200" height="300" fill="#FFFFFF" opacity="0.018">
-    <animate attributeName="opacity" values="0.018;0.03;0.016;0.024;0.018" dur="3.2s" repeatCount="indefinite"/>
+  <!-- background -->
+  <rect width="1200" height="170" fill="url(#footerBg)"/>
+  <rect width="1200" height="170" fill="url(#footerScan)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 6;0 0" dur="1.6s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- scanlines -->
-  <g opacity="0.4">
-    <rect width="1200" height="300" fill="url(#scanlines)">
-      <animateTransform attributeName="transform" type="translate" values="0 0;0 6;0 0" dur="1.8s" repeatCount="indefinite"/>
-    </rect>
-  </g>
+  <!-- ambient overlays -->
+  <rect width="1200" height="170" fill="#FFFFFF" opacity="0.012">
+    <animate attributeName="opacity" values="0.012;0.025;0.01;0.018;0.012" dur="3s" repeatCount="indefinite"/>
+  </rect>
 
   <!-- glitch bars -->
+  <g opacity="0.16">
+    <rect x="-180" y="34" width="340" height="4" fill="#FFFFFF">
+      <animate attributeName="x" values="-180;1280;-180" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.14;0;0.08;0" dur="2.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1280" y="68" width="460" height="3" fill="#D0D7DE">
+      <animate attributeName="x" values="1280;-300;1280" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.16;0.02;0.08;0" dur="3.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-220" y="98" width="520" height="4" fill="#B8C0C8">
+      <animate attributeName="x" values="-220;1300;-220" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.13;0;0.07;0" dur="2.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- japanese rain -->
+  <g font-family="monospace" font-size="14" fill="#B8C0C8" opacity="0.13">
+    <text x="70" y="-15">雨 システム コード 開発</text>
+    <animateTransform attributeName="transform" type="translate" values="0,-15;0,195" dur="6.6s" repeatCount="indefinite"/>
+  </g>
+
+  <g font-family="monospace" font-size="13" fill="#8B949E" opacity="0.12">
+    <text x="330" y="-28">x2osso 未来 実験 backend</text>
+    <animateTransform attributeName="transform" type="translate" values="0,-28;0,200" dur="8.2s" repeatCount="indefinite"/>
+  </g>
+
+  <g font-family="monospace" font-size="14" fill="#C9D1D9" opacity="0.11">
+    <text x="690" y="-18">人工知能 ゲーム 自動化</text>
+    <animateTransform attributeName="transform" type="translate" values="0,-18;0,195" dur="7.4s" repeatCount="indefinite"/>
+  </g>
+
+  <g font-family="monospace" font-size="13" fill="#8B949E" opacity="0.12">
+    <text x="980" y="-12">コード 雨 雨 雨</text>
+    <animateTransform attributeName="transform" type="translate" values="0,-12;0,190" dur="6.8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- floating particles -->
   <g opacity="0.18">
-    <rect x="-120" y="56" width="400" height="4" fill="#FFFFFF">
-      <animate attributeName="x" values="-120;1280;-120" dur="2.4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.2;0;0.12;0" dur="2.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="1280" y="94" width="280" height="3" fill="#D0D7DE">
-      <animate attributeName="x" values="1280;-240;1280" dur="2.9s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.16;0;0.09;0" dur="2.9s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="-180" y="136" width="520" height="5" fill="#FFFFFF">
-      <animate attributeName="x" values="-180;1320;-180" dur="3.4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.15;0.03;0.12;0" dur="3.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="1300" y="168" width="360" height="4" fill="#B8C0C8">
-      <animate attributeName="x" values="1300;-260;1300" dur="2.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.16;0;0.08;0" dur="2.2s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-
-  <!-- particles -->
-  <g opacity="0.22">
-    <circle cx="95" cy="44" r="2" fill="#C9D1D9">
-      <animate attributeName="cy" values="44;68;44" dur="4.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.12;0.28;0.12" dur="2.1s" repeatCount="indefinite"/>
+    <circle cx="180" cy="48" r="1.6" fill="#C9D1D9">
+      <animate attributeName="cy" values="48;72;48" dur="4.8s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="220" cy="100" r="1.5" fill="#AEB6BF">
-      <animate attributeName="cy" values="100;128;100" dur="5.8s" repeatCount="indefinite"/>
+    <circle cx="920" cy="58" r="1.9" fill="#D0D7DE">
+      <animate attributeName="cy" values="58;82;58" dur="5.2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="955" cy="58" r="2" fill="#D0D7DE">
-      <animate attributeName="cy" values="58;86;58" dur="4.6s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1075" cy="116" r="1.5" fill="#8B949E">
-      <animate attributeName="cy" values="116;146;116" dur="6.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1110" cy="70" r="1.7" fill="#C9D1D9">
-      <animate attributeName="cy" values="70;100;70" dur="5s" repeatCount="indefinite"/>
+    <circle cx="1030" cy="92" r="1.4" fill="#8B949E">
+      <animate attributeName="cy" values="92;116;92" dur="6.2s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <!-- Japanese rain -->
-  <g font-family="monospace" font-size="18" fill="#C9D1D9" opacity="0.17">
-    <text x="55" y="-90">雨 コード 未来 システム 開発 人工知能</text>
-    <animateTransform attributeName="transform" type="translate" values="0,-35;0,345" dur="7.8s" repeatCount="indefinite"/>
-  </g>
-
-  <g font-family="monospace" font-size="16" fill="#9BA3AD" opacity="0.15">
-    <text x="165" y="-150">ガ ブ リ エ ル x2osso 実験 開発</text>
-    <animateTransform attributeName="transform" type="translate" values="0,-65;0,360" dur="8.7s" repeatCount="indefinite"/>
-  </g>
-
-  <g font-family="monospace" font-size="17" fill="#B8C0C8" opacity="0.14">
-    <text x="330" y="-120">未来 コード システム 雨 雨 雨</text>
-    <animateTransform attributeName="transform" type="translate" values="0,-50;0,350" dur="7.2s" repeatCount="indefinite"/>
-  </g>
-
-  <g font-family="monospace" font-size="15" fill="#8B949E" opacity="0.15">
-    <text x="505" y="-135">開発者 自動化 技術 ゲーム</text>
-    <animateTransform attributeName="transform" type="translate" values="0,-60;0,355" dur="9.8s" repeatCount="indefinite"/>
-  </g>
-
-  <g font-family="monospace" font-size="18" fill="#D0D7DE" opacity="0.12">
-    <text x="700" y="-95">シ ス テ ム コ ー ド 未 来</text>
-    <animateTransform attributeName="transform" type="translate" values="0,-28;0,340" dur="8.2s" repeatCount="indefinite"/>
-  </g>
-
-  <g font-family="monospace" font-size="16" fill="#8B949E" opacity="0.13">
-    <text x="885" y="-145">雨 雨 雨 ガブリエル backend</text>
-    <animateTransform attributeName="transform" type="translate" values="0,-75;0,360" dur="9.2s" repeatCount="indefinite"/>
-  </g>
-
-  <g font-family="monospace" font-size="17" fill="#B8C0C8" opacity="0.12">
-    <text x="1020" y="-110">未来 開発 自動化 実験</text>
-    <animateTransform attributeName="transform" type="translate" values="0,-45;0,345" dur="7.5s" repeatCount="indefinite"/>
-  </g>
-
-  <!-- center panel -->
-  <g>
-    <rect x="200" y="46" width="800" height="126" rx="18" fill="#05070A" fill-opacity="0.58">
-      <animate attributeName="fill-opacity" values="0.58;0.67;0.54;0.62;0.58" dur="2.8s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="200" y="46" width="800" height="126" rx="18" stroke="#6E7681" stroke-opacity="0.26">
-      <animate attributeName="stroke-opacity" values="0.16;0.30;0.18;0.26;0.16" dur="2.8s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-
-  <!-- label -->
-  <text x="600" y="72" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="3" fill="#8B949E">
-    SYSTEM ONLINE
-    <animate attributeName="opacity" values="0.6;1;0.75;1;0.6" dur="2.4s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- title main -->
-  <text x="600" y="116"
-        text-anchor="middle"
-        font-family="Verdana, Arial, sans-serif"
-        font-size="35"
-        font-weight="700"
-        fill="url(#titleGradient)"
-        filter="url(#titleGlow)">
-    GABRIEL | x2osso
-    <animate attributeName="opacity" values="1;0.92;1;0.96;1" dur="1.8s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- glitch layer 1 -->
-  <text x="603" y="116"
-        text-anchor="middle"
-        font-family="Verdana, Arial, sans-serif"
-        font-size="35"
-        font-weight="700"
-        fill="#FFFFFF"
-        fill-opacity="0.10">
-    GABRIEL | x2osso
-    <animate attributeName="x" values="603;598;604;600;603" dur="0.95s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.04;0.11;0.02;0.12;0.04" dur="0.95s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- glitch layer 2 -->
-  <text x="596" y="116"
-        text-anchor="middle"
-        font-family="Verdana, Arial, sans-serif"
-        font-size="35"
-        font-weight="700"
-        fill="#9AA4AE"
-        fill-opacity="0.10">
-    GABRIEL | x2osso
-    <animate attributeName="x" values="596;602;595;600;596" dur="1.25s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.03;0.08;0.02;0.10;0.03" dur="1.25s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- subtitle -->
-  <text x="600" y="142"
-        text-anchor="middle"
-        font-family="monospace"
-        font-size="15"
-        fill="url(#subGradient)">
-    Backend • Games • IA • Automação
-    <animate attributeName="opacity" values="0.8;1;0.76;1;0.8" dur="3s" repeatCount="indefinite"/>
-  </text>
-
-  <line x1="405" y1="157" x2="795" y2="157" stroke="#8B949E" stroke-opacity="0.45">
-    <animate attributeName="stroke-opacity" values="0.2;0.55;0.22;0.45;0.2" dur="2.7s" repeatCount="indefinite"/>
-  </line>
-
-  <text x="600" y="180"
-        text-anchor="middle"
-        font-family="monospace"
-        font-size="11"
-        fill="#6E7681">
-    01111000 00110010 01101111 01110011 01110011 01101111
-    <animate attributeName="opacity" values="0.45;0.85;0.5;0.75;0.45" dur="2.2s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- moving waves, much stronger -->
+  <!-- stronger moving waves -->
   <g>
     <g>
-      <path d="M-260 210C-160 188 -60 182 40 190C140 198 240 220 340 226C440 232 540 214 640 201C740 188 840 189 940 199C1040 209 1140 230 1240 232C1340 234 1440 216 1540 204V300H-260V210Z"
-            fill="#0F1419"/>
-      <animateTransform attributeName="transform" type="translate" values="0 0;-130 -8;0 0" dur="9s" repeatCount="indefinite"/>
+      <path d="M-240 62C-120 78 0 88 120 84C240 80 360 60 480 54C600 48 720 58 840 69C960 80 1080 86 1200 82C1320 78 1440 64 1560 56V170H-240V62Z"
+            fill="#12171D"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-110 -5;0 0" dur="8.4s" repeatCount="indefinite"/>
     </g>
 
     <g>
-      <path d="M-280 226C-170 215 -60 210 50 214C160 218 270 232 380 236C490 240 600 232 710 222C820 212 930 209 1040 214C1150 219 1260 234 1370 239C1480 244 1590 237 1700 228V300H-280V226Z"
-            fill="#1A2027" fill-opacity="0.97"/>
-      <animateTransform attributeName="transform" type="translate" values="0 0;110 6;0 0" dur="6.4s" repeatCount="indefinite"/>
+      <path d="M-260 84C-130 96 0 103 130 100C260 97 390 84 520 79C650 74 780 82 910 91C1040 100 1170 106 1300 103C1430 100 1560 89 1690 82V170H-260V84Z"
+            fill="#1D242C" fill-opacity="0.97"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;95 7;0 0" dur="6.2s" repeatCount="indefinite"/>
     </g>
 
     <g>
-      <path d="M-260 242C-140 236 -20 233 100 236C220 239 340 246 460 248C580 250 700 245 820 240C940 235 1060 236 1180 241C1300 246 1420 252 1540 253C1660 254 1780 249 1900 244V300H-260V242Z"
-            fill="#2A313A" fill-opacity="0.94"/>
-      <animateTransform attributeName="transform" type="translate" values="0 0;-85 -5;0 0" dur="4.8s" repeatCount="indefinite"/>
+      <path d="M-240 106C-100 112 40 115 180 113C320 111 460 104 600 102C740 100 880 105 1020 110C1160 115 1300 119 1440 117C1580 115 1720 111 1860 106V170H-240V106Z"
+            fill="#2C343E" fill-opacity="0.95"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-70 -4;0 0" dur="4.6s" repeatCount="indefinite"/>
     </g>
 
-    <g opacity="0.55">
-      <path d="M-260 255C-125 252 10 252 145 255C280 258 415 262 550 262C685 262 820 258 955 255C1090 252 1225 252 1360 255C1495 258 1630 262 1765 262C1900 262 2035 258 2170 255V300H-260V255Z"
-            fill="#434D59"/>
-      <animateTransform attributeName="transform" type="translate" values="0 0;58 4;0 0" dur="3.3s" repeatCount="indefinite"/>
+    <g opacity="0.5">
+      <path d="M-240 126C-90 129 60 130 210 129C360 128 510 125 660 125C810 125 960 128 1110 129C1260 130 1410 132 1560 132C1710 132 1860 130 2010 128V170H-240V126Z"
+            fill="#48515D"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;48 3;0 0" dur="3.4s" repeatCount="indefinite"/>
     </g>
   </g>
 
-  <!-- bottom caption -->
-  <text x="600" y="268"
+  <!-- final text -->
+  <text x="600" y="146"
         text-anchor="middle"
         font-family="monospace"
         font-size="11"
         fill="#D0D7DE"
         fill-opacity="0.84">
-    code • experiments • ideas • systems
-    <animate attributeName="opacity" values="0.55;0.95;0.6;0.88;0.55" dur="3.1s" repeatCount="indefinite"/>
+    end_of_file • x2osso • see you, space cowboy...
+    <animate attributeName="opacity" values="0.55;0.96;0.62;0.88;0.55" dur="2.8s" repeatCount="indefinite"/>
   </text>
 </svg>
